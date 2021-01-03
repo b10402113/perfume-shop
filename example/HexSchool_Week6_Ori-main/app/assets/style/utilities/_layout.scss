@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include mobile {
+        width: 95%;
+    }
+}
+
+// haeder
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .logo {
+        width: 128px;
+        height: 38px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include mobile {
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume%402x.png");
+        }
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        .MB-blog,
+        .MB-contact,
+        .MB-login {
+            display: none;
+        }
+        @include mobile {
+            width: 112%;
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: -6%;
+            z-index: 2;
+            .PC-cart,
+            .PC-login {
+                display: none;
+            }
+            .MB-blog,
+            .MB-contact,
+            .MB-mypage,
+            .MB-login {
+                display: block;
+            }
+        }
+        li + li {
+            margin-left: 32px;
+            @include mobile {
+                margin-left: 0;
+            }
+        }
+        li {
+            a {
+                display: block;
+                color: #8d8d8d;
+                font: normal normal normal 20px/30px SF Pro Text;
+                padding: 20px 0;
+                transition: 0.5s;
+                position: relative;
+                @include mobile {
+                    padding: 16px 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    text-align: center;
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                    .fas {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    color: #000;
+                }
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000;
+                    position: absolute;
+                    left: 0;
+                    bottom: 15px;
+                    transform: scale(0);
+                    transition: 0.5s;
+                }
+                &:hover:after {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .mobile-group {
+        display: none;
+        @include mobile {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            position: relative;
+            .box {
+                display: block;
+                width: 40px;
+                height: 5px;
+                background-color: #707070;
+                border-radius: 30px;
+                box-shadow: 0 14px 0 #707070, 0 -14px 0 #707070;
+                margin-left: 36px;
+                cursor: pointer;
+            }
+            .cart {
+                font-size: 20px;
+                color: #8d8d8d;
+            }
+            .number {
+                color: #fff;
+                position: absolute;
+                font: normal normal normal 12px/30px SF Pro Text;
+                top: 2px;
+                left: 20px;
+                &::after {
+                    content: "";
+                    width: 16px;
+                    height: 13px;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 8px;
+                    left: -4px;
+                    z-index: -1;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+}
+
+// footer
+.footer-bottom {
+    background-color: $color-primary;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        @include mobile {
+            padding: 20px 0;
+        }
+        .logo {
+            width: 128px;
+            height: 38px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-indent: 101%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+        .copyRight {
+            color: #fff;
+            font: normal normal medium 14px/21px SF Pro Text;
+            position: absolute;
+            left: 148px;
+            top: 30px;
+            @include mobile {
+                top: 0;
+                bottom: 0;
+                right: -10px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            @include mobile {
+                display: none;
+            }
+            li + li {
+                margin-left: 36px;
+            }
+            li {
+                a {
+                    display: block;
+                    color: #fff;
+                    font: normal normal normal 20px/30px SF Pro Text;
+                    padding: 20px 0;
+                    transition: 0.5s;
+                    position: relative;
+                    &:hover {
+                        color: #000;
+                    }
+                    &:after {
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        left: 0;
+                        bottom: 15px;
+                        transform: scale(0);
+                        transition: 0.5s;
+                    }
+                    &:hover:after {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

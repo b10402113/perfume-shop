@@ -1,0 +1,17 @@
+//detail
+
+.details {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 0;
+  }
+
+  .add-button {
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+      color: $primary-lighter;
+    }
+  }
+}

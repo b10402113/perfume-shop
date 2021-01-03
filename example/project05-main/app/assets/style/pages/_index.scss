@@ -1,0 +1,53 @@
+// banner
+.banner {
+  height: 100vh;
+  background: url('../images/index1.jpg') no-repeat center/cover;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.h1 {
+  @include media-breakpoint-down(sm) {
+    font-size: $base-font-size*2;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+}
+
+.h4 {
+  @include media-breakpoint-down(sm) {
+    font-size: $base-font-size*1.25;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+
+// product
+.product {
+  background-color: $secondary-lighter;
+}
+
+.sold {
+  position: relative;
+  filter: brightness(70%);
+}
+
+.sold-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+// subscript
+.subscript {
+  height: 600px;
+  background: url('../images/index10.jpg') no-repeat center/cover;
+
+  .container {
+    height: 100%;
+  }
+}

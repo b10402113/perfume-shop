@@ -1,0 +1,40 @@
+// member
+
+.menu-link {
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+
+  &:hover {
+    border-bottom: 2px solid $primary-light;
+  }
+
+  &-active {
+    border-bottom: 2px solid $primary-light;
+  }
+}
+
+.form-group {
+  margin-bottom: $spacer*5;
+}
+
+.member-label {
+  font-size: $base-font-size;
+  line-height: 1.4;
+  color: $info-light;
+}
+
+.member-readonly {
+  padding: $spacer*2;
+  color: $info-light;
+  font-size: $base-font-size;
+  line-height: 1.2;
+}
+
+.member-input {
+  padding: $spacer*2;
+  color: $info-light;
+  font-size: $base-font-size;
+  line-height: 1.2;
+  border: 1px solid $info-lighter;
+  border-radius: 4px;
+}

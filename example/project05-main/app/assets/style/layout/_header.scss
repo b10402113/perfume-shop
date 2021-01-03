@@ -1,0 +1,69 @@
+// header
+.header {
+  .container-fluid {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+}
+
+.logo {
+  width: 128px;
+  height: 38px;
+  background-image: url('../images/d’Perfume.png');
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+}
+
+.nav-link {
+  font-size: $base-font-size*1.25;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $secondary-light;
+  transition: .5s;
+
+  &:hover {
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, $primary-lighter 50%, transparent 50%);
+    background-position: left 0 bottom 40%;
+    color: $info !important;
+  }
+}
+
+.header .nav-link {
+  @include media-breakpoint-down(sm) {
+    background-color: $point;
+    color: $light !important;
+    line-height: 1.5;
+    border-bottom: 1px solid $light;
+    padding: $spacer*4 0;
+  }
+}
+
+.phone-menu {
+  @include media-breakpoint-up(md) {
+    margin-right: -$spacer*3;
+  }
+}
+
+.cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+}

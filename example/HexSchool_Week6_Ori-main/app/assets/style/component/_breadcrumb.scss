@@ -1,0 +1,27 @@
+//  breadcrumb
+.breadcrumb {
+    background-color: #916000;
+    @include mobile {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        li + li {
+            margin-left: 28px;
+        }
+        li {
+            a {
+                display: block;
+                color: #fff;
+                padding: 14px 0;
+                font: normal normal normal 20px/30px SF Pro Text;
+                transition: 0.5s;
+                &:hover {
+                    color: #000;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

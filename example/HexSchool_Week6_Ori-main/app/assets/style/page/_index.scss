@@ -1,0 +1,320 @@
+// banner
+.banner {
+    height: 870px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include mobile {
+        height: 480px;
+        background-position: left center;
+    }
+    .container {
+        position: relative;
+        height: 100%;
+        .banner-text {
+            width: 40%;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include mobile {
+                width: 100%;
+            }
+            .title {
+                font: normal normal bold 40px/60px SF Pro Text;
+                @include mobile {
+                    font: normal normal bold 32px/48px SF Pro Text;
+                }
+            }
+            .text {
+                font: normal normal normal 24px/36px SF Pro Text;
+                @include mobile {
+                    font: normal normal normal 20px/30px SF Pro Text;
+                }
+            }
+            .button {
+                width: 80%;
+                display: block;
+                color: #fff;
+                border: 2px solid #fff;
+                border-radius: 30px;
+                text-align: center;
+                margin-top: 16px;
+                font: normal normal bold 36px/60px SF Pro Text;
+                transition: 0.5s;
+                &:hover {
+                    background-color: #000;
+                }
+                @include mobile {
+                    width: 100%;
+                    font: normal normal medium 28px/42px SF Pro Text;
+                }
+            }
+        }
+    }
+}
+
+// product-list
+.product-list {
+    padding: 60px 0;
+    @include mobile {
+        padding: 40px 0;
+    }
+    .product {
+        display: flex;
+        @include mobile {
+            display: block;
+            & + .product {
+                margin-top: 32px;
+            }
+        }
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .pic {
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .perfume-one {
+            height: 555px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index2.jpg");
+            background-position: top center;
+            @include mobile {
+                height: 350px;
+            }
+        }
+        .perfume-two {
+            height: 555px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png");
+            background-position: center center;
+            @include mobile {
+                height: 350px;
+            }
+        }
+        .perfume-three {
+            height: 555px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index4.jpg");
+            background-position: left center;
+            @include mobile {
+                height: 350px;
+            }
+        }
+        .perfume-four {
+            height: 1000px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index5.jpg");
+            background-position: right center;
+            @include mobile {
+                height: 680px;
+            }
+        }
+        &-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 8%;
+            @include mobile {
+                width: 100%;
+                padding: 0;
+            }
+            .sub-product + .sub-product {
+                margin-top: 52px;
+                @include mobile {
+                    margin-top: 20px;
+                }
+            }
+            .title {
+                font: normal normal bold 32px/48px SF Pro Text;
+                @include mobile {
+                    font: normal normal 600 24px/36px SF Pro Text;
+                }
+            }
+            .text {
+                font: normal normal 300 20px/30px PingFang TC;
+                @include mobile {
+                    font: normal normal 300 16px/24px SF Pro Text;
+                }
+            }
+            .button-more {
+                width: 20%;
+                color: #ac8a46;
+                margin-top: 16px;
+                font: normal normal 600 16px/24px PingFang TC;
+                transition: 0.5s;
+                @include mobile {
+                    margin-top: 8px;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .sub-title {
+                font: normal normal 600 24px/36px SF Pro Text;
+                .block {
+                    display: block;
+                }
+            }
+            .sub-text {
+                font: normal normal 300 16px/24px SF Pro Text;
+            }
+            .button-plan {
+                display: block;
+                color: #000;
+                font: normal normal medium 20px/30px SF Pro Text;
+                padding: 18px 0;
+                text-align: center;
+                border: 2px solid #000000;
+                border-radius: 30px;
+                margin-top: 60px;
+                transition: 0.5s;
+                @include mobile {
+                    margin-top: 20px;
+                }
+                &:hover {
+                    color: #fff;
+                    background-color: #000;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// product-item
+.product-item {
+    background-color: #e0e0e0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        @include mobile {
+            display: block;
+            padding: 32px 0;
+        }
+        .item {
+            width: 31%;
+            @include mobile {
+                width: 100%;
+                & + .item {
+                    margin-top: 32px;
+                }
+            }
+            .pic {
+                height: 540px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                @include mobile {
+                    height: 350px;
+                }
+            }
+            .item-one {
+                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg");
+                @include mobile {
+                    background-position: bottom center;
+                }
+            }
+            .item-two {
+                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index7.jpg");
+            }
+            .item-three {
+                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index8.jpg");
+                position: relative;
+                .sold-out {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    color: #fff;
+                    font: normal normal 600 24px/36px SF Pro Text;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .title {
+                font: normal normal 600 24px/36px SF Pro Text;
+            }
+            .sub-title {
+                font: normal normal 300 16px/24px SF Pro Text;
+            }
+            .price {
+                font: normal normal 300 16px/24px SF Pro Text;
+                margin-top: 16px;
+                @include mobile {
+                    margin-top: 4px;
+                }
+                .original-price {
+                    color: #8d8d8d;
+                    text-decoration: line-through;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+// product-card
+.product-card {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        @include mobile {
+            display: block;
+            padding: 40px 0;
+        }
+        .pic {
+            width: 65.5%;
+            height: 520px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index9.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .text {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include mobile {
+                width: 100%;
+            }
+            .title {
+                font: normal normal bold 32px/48px SF Pro Text;
+            }
+            .sub-title {
+                font: normal normal 300 20px/30px SF Pro Text;
+            }
+            .text {
+                width: 100%;
+                font: normal normal 300 16px/24px SF Pro Text;
+                margin: 16px 0;
+                @include mobile {
+                    margin: 8px 0;
+                }
+            }
+            .button-more {
+                width: 25%;
+                color: #ac8a46;
+                font: normal normal 600 16px/24px PingFang TC;
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

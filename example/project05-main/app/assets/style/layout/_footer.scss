@@ -1,0 +1,26 @@
+// footer
+.footer {
+  .logo {
+    width: 128px;
+    height: 38px;
+    background-image: url('../images/d’Perfumewhite.png');
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+  }
+
+  .nav-link {
+    line-height: 1.5;
+    color: $light;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 40%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(0deg, $primary-lighter 50%, transparent 50.1%);
+      background-position: left 0 bottom 40%;
+      color: $light !important;
+    }
+  }
+}

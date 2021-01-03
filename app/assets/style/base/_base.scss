@@ -1,0 +1,17 @@
+
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
+	list-style: none;
+}
+
+// Link
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+button:focus{
+    outline:none;
+}

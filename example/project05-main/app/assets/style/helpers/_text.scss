@@ -1,0 +1,163 @@
+// text
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+.h1 {
+  font-size: $base-font-size*2.5;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: $base-font-size*2;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-sb {
+    font-size: $base-font-size*2;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  &-b {
+    font-size: $base-font-size*2;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+}
+
+.h3 {
+  font-size: $base-font-size*1.75;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-m-xs {
+    font-size: $base-font-size*1.75;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+}
+
+.h4 {
+  font-size: $base-font-size*1.5;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-sb {
+    font-size: $base-font-size*1.5;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+
+.h5 {
+  font-size: $base-font-size*1.25;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-xs {
+    font-size: $base-font-size*1.25;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &-l {
+    font-size: $base-font-size*1.25;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  &-m {
+    font-size: $base-font-size*1.25;
+    line-height: 1.5;
+    font-weight: 500;
+
+    &-xs {
+      font-size: $base-font-size*1.25;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+
+  &-sb-s {
+    font-size: $base-font-size*1.25;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
+
+.h6 {
+  font-size: $base-font-size;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-xs {
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &-s {
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  &-l {
+    font-size: $base-font-size;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  &-m {
+    font-size: $base-font-size;
+    line-height: 1.5;
+    font-weight: 500;
+
+    &-xs {
+      font-size: $base-font-size;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    &-s {
+      font-size: $base-font-size;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  }
+
+  &-sb {
+    font-size: $base-font-size;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+
+.hxs {
+  font-size: $base-font-size*0.875;
+  line-height: 1.5;
+  font-weight: 400;
+
+  &-m {
+    font-size: $base-font-size*0.875;
+    line-height: 1.5;
+    font-weight: 500;
+
+    &-xs {
+      font-size: $base-font-size*0.875;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+}
+
+.discount {
+  color: $secondary-light;
+  text-decoration: line-through;
+}

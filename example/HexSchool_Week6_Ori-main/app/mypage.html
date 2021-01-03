@@ -1,0 +1,151 @@
+---
+title: Mypage
+layout: ./app/layout.ejs
+engine: ejs
+current: mypage
+---
+
+<!-- breadcrumb -->
+<div class="breadcrumb">
+    <div class="container">
+        <ul class="nav-bar">
+            <li><a href="chanel.html">CHANEL</a></li>
+            <li><a href="#">Jo Malone</a></li>
+            <li><a href="#">Curology</a></li>
+            <li><a href="#">Dior</a></li>
+            <li><a href="#">Chloe</a></li>
+            <li><a href="#">ZARA</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- member group -->
+<div class="member-group container">
+    <div class="member-center">
+        <h4 class="title">會員中心</h4>
+        <ul class="member-list">
+            <li><a href="#" class="default">會員資料修改</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">退／換貨申請</a></li>
+        </ul>
+    </div>
+    <div class="data-modify">
+        <div class="info-modify">
+            <h3 class="title">個人資料修改</h3>
+            <form>
+                <label for="account">會員帳號</label>
+                <input type="text" id="account" class="bn" placeholder="email@example.com" readonly>
+            </form>
+            <form>
+                <label for="name">會員姓名</label>
+                <input type="name" id="name">
+            </form>
+            <form>
+                <label for="gender">會員性別</label>
+                <select name="" id="gender" class="wd">
+                    <option>女</option>
+                    <option>男</option>
+                </select>
+            </form>
+            <form>
+                <label for="email">電子信箱</label>
+                <input type="email" id="email" value="email@example.com">
+            </form>
+            <form>
+                <label for="phone">手機號碼</label>
+                <input type="phone" id="phone">
+            </form>
+            <form>
+                <label for="address" class="align-item-start">聯絡地址</label>
+                <div class="address-group">
+                    <select name="" id="address" class="block">
+                        <option>台灣及離島</option>
+                        <option>日本</option>
+                        <option>韓國</option>
+                    </select>
+                    <select name="" id="county" class="mt">
+                        <option>高雄市</option>
+                        <option>台北市</option>
+                        <option>桃園市</option>
+                    </select>
+                    <select name="" id="region" class="ml">
+                        <option>鹽埕區</option>
+                        <option>三民區</option>
+                        <option>鳳山區</option>
+                    </select>
+                    <input type="text" class="block mt" placeholder="請輸入地址">
+                    <input type="checkbox" class="checkbox mt" checked>
+                    <span class="memo">我願意收到最新優惠情報</span>
+                </div>
+            </form>
+            <form>
+                <label for="delivery" class="align-item-start">配送地址</label>
+                <div class="delivery-group">
+                    <select name="" id="delivery" class="block">
+                        <option>台灣及離島</option>
+                        <option>日本</option>
+                        <option>韓國</option>
+                    </select>
+                    <select name="" id="county" class="mt">
+                        <option>高雄市</option>
+                        <option>台北市</option>
+                        <option>桃園市</option>
+                    </select>
+                    <select name="" id="region" class="ml">
+                        <option>鹽埕區</option>
+                        <option>三民區</option>
+                        <option>鳳山區</option>
+                    </select>
+                    <input type="text" class="block mt" placeholder="請輸入地址">
+                    <form class="m0">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" class="submit confirm" value="確定修改">
+                    </form>
+                </div>
+            </form>
+        </div>
+        <div class="password-modify">
+            <h3 class="title">修改密碼</h3>
+            <form>
+                <label for="old-password">舊密碼</label>
+                <input type="password" id="old-password">
+            </form>
+            <form>
+                <label for="new-password">新密碼</label>
+                <input type="password" id="new-password">
+            </form>
+            <form>
+                <label for="confirm-password">確認密碼</label>
+                <input type="password" id="confirm-password">
+            </form>
+            <form class="m0">
+                <label for="submit"></label>
+                <input type="submit" id="submit" class="submit change" value="變更密碼">
+            </form>
+        </div>
+    </div>
+    <div class="member-info">
+        <h3 class="title">
+            <i class="admin fas fa-user"></i>
+            <span class="text">會員編碼</span>
+            <span class="code">T00020080615</span>
+        </h3>
+        <div class="member-item">
+            <ul class="item">
+                <li>購物車</li>
+                <li>我的收藏</li>
+                <li>完成訂單</li>
+                <li>會員紅利</li>
+                <li>邀請碼</li>
+            </ul>
+            <ul class="quantity">
+                <li>56</li>
+                <li>23</li>
+                <li>8</li>
+                <li>2680</li>
+                <li>TK2075</li>
+            </ul>
+        </div>
+        <p class="plan">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+    </div>
+</div>

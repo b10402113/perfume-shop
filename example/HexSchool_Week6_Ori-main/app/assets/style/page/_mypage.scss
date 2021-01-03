@@ -1,0 +1,187 @@
+// member-group
+.member-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 0 60px;
+    @include mobile {
+        padding: 40px 0;
+    }
+    .member-center {
+        width: 15%;
+        @include mobile {
+            width: 100%;
+        }
+        .title {
+            color: #848484;
+            font: normal normal medium 20px/30px SF Pro Text;
+            margin-bottom: 28px;
+            @include mobile {
+                display: none;
+            }
+        }
+        .member-list {
+            @include mobile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            li + li {
+                margin-top: 24px;
+                @include mobile {
+                    margin-top: 0;
+                }
+            }
+            a {
+                color: #848484;
+                font: normal normal medium 16px/24px PingFang TC;
+            }
+            .default {
+                border-bottom: 2px solid $color-primary;
+            }
+        }
+    }
+    .data-modify {
+        width: 55%;
+        color: #818a91;
+        @include mobile {
+            width: 100%;
+            order: 1;
+        }
+        .title {
+            color: #000;
+            font: normal normal medium 16px/24px PingFang TC;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #818a91;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        label {
+            width: 15%;
+            font: normal normal normal 16px/22px PingFang TC;
+            @include mobile {
+                width: 25%;
+            }
+        }
+        .block {
+            display: block;
+        }
+
+        input,
+        select {
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        input {
+            width: 350px;
+            padding: 10px;
+            @include mobile {
+                width: 255px;
+            }
+            &::placeholder {
+                font: normal normal normal 16px/19px SF Pro Text;
+            }
+        }
+        select {
+            width: 160px;
+            padding: 8px 4px;
+            color: #818a91;
+            font: normal normal normal 16px/22px PingFang TC;
+            @include mobile {
+                width: 80px;
+            }
+        }
+        .col-md {
+            @include mobile {
+                width: 160px;
+            }
+        }
+        .wd {
+            width: 60px;
+        }
+        .bn {
+            border: none;
+        }
+        .mt {
+            margin-top: 10px;
+        }
+        .m0 {
+            margin-top: 0;
+        }
+        .ml {
+            margin-left: 10px;
+        }
+        .checkbox {
+            width: 15px;
+        }
+        .align-item-start {
+            align-self: start;
+        }
+        .memo {
+            font: normal normal normal 16px/24px PingFang TC;
+        }
+        .submit {
+            width: 160px;
+            display: block;
+            color: #fff;
+            padding: 8px 0;
+            font: normal normal normal 16px/22px PingFang TC;
+            background-color: $color-primary;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .password-modify {
+            margin-top: 48px;
+        }
+    }
+    .member-info {
+        width: 25%;
+        @include mobile {
+            width: 100%;
+            padding: 40px 0;
+        }
+        span {
+            color: #8d8d8d;
+        }
+        .text {
+            font: normal normal normal 16px/22px PingFang TC;
+        }
+        .code {
+            font: normal normal medium 20px/30px SF Pro Text;
+            margin-left: 6px;
+        }
+        .member-item {
+            margin-top: 24px;
+            display: flex;
+            .item {
+                width: 35%;
+                li {
+                    color: #818a91;
+                    font: normal normal normal 16px/24px PingFang TC;
+                }
+                li + li {
+                    margin-top: 16px;
+                }
+            }
+            .quantity {
+                width: 65%;
+                li {
+                    color: #818a91;
+                    font: normal normal normal 16px/24px PingFang TC;
+                }
+                li + li {
+                    margin-top: 16px;
+                }
+            }
+        }
+        .plan {
+            color: #818a91;
+            font: normal normal normal 14px/21px PingFang TC;
+        }
+    }
+}
